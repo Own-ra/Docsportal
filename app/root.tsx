@@ -94,7 +94,7 @@ function Layout({ navigations }: LoaderData) {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="p-6 text-indigo-700 md:flex md:space-x-12 md:px-12 md:py-12">
-            <nav className="fixed top-[124px] hidden h-full w-full flex-shrink-0 pb-6 md:block md:w-52 md:pb-12">
+            <nav className=" top-[124px] hidden h-full w-full flex-shrink-0 pb-6 md:block md:w-52 md:pb-12">
               <Nav navigations={navigations} />
             </nav>
             <main className="w-full md:pl-52">
@@ -103,8 +103,9 @@ function Layout({ navigations }: LoaderData) {
           </div>
         </div>
       </div>
-
-      <Footer />
+      <div className="lg:sticky">
+        <Footer />
+      </div>
     </>
   );
 }

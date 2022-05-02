@@ -3,7 +3,7 @@ import { Link } from './link';
 
 export function Footer() {
   return (
-    <div className="relative z-20 mt-6 border-t border-gray-100 py-6 md:mt-12 md:py-12">
+    <div className="relative z-20 mt-6 border-t border-gray-200 py-6 md:mt-6 md:py-6">
       <footer className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex items-center justify-between">
           <p>
@@ -14,11 +14,19 @@ export function Footer() {
           </p>
 
           <Link
-            href="https://github.com/graphcms/docs-starter"
+            href="https://github.com/graphcms"
             className="text-gray-500 hover:text-indigo-700"
           >
             <GitHub className="h-7 w-7" />
           </Link>
+          <div>
+            <Link
+              href="https://graphcms.com/support"
+              className="text-gray-500 hover:text-indigo-700"
+            >
+              Contact Support
+            </Link>
+          </div>
         </div>
       </footer>
     </div>

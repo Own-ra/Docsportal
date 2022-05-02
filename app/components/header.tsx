@@ -3,7 +3,7 @@ import { Link, useLocation } from 'remix';
 import { Popover } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import cc from 'classcat';
-
+import { Link as link } from './link';
 import { Logo } from '~/components/logo';
 import { GetAllNavItemsQuery } from '~/generated/schema.server';
 import { Nav } from '~/components/nav';
@@ -47,6 +47,14 @@ export function Header({ navigations }: GetAllNavItemsQuery) {
                     <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Popover.Button>
+              </div>
+              <div>
+                {/* <link
+                  href="https://app.graphcms.com"
+                  className="text-white hover:text-indigo-700"
+                >
+                  Launch GraphCMS
+                </link> */}
               </div>
             </div>
 
