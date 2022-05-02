@@ -97,7 +97,7 @@ function Layout({ navigations }: LoaderData) {
             <nav className=" top-[124px] hidden h-full w-full flex-shrink-0 pb-6 md:block md:w-52 md:pb-12">
               <Nav navigations={navigations} />
             </nav>
-            <main className="w-full md:pl-52">
+            <main className="md:pl-30 w-full">
               <Outlet />
             </main>
           </div>
